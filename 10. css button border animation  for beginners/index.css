@@ -1,0 +1,48 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+	background-color: #262626ff;
+}
+.box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 110px;
+	width: 310px;
+	background-color: coral;
+	cursor: pointer;
+}
+.button{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+	width: 300px;
+	background-color: #262626ff;
+	color: white;
+	font-size: 50px;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+.box:hover{
+    animation: anime 1s linear infinite;
+}
+@keyframes anime{
+	0%{
+		filter: hue-rotate(0deg);
+		box-shadow: 1px 1px 60px coral;
+	}
+	100%{
+		filter: hue-rotate(360deg);
+		box-shadow: 1px 1px 60px coral;
+	}
+}
+	
